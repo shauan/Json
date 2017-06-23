@@ -13,7 +13,7 @@ $.getJSON( "https://private-f3b4b-interview2.apiary-mock.com/data", function( da
 
     items.push("<div id='" + key + "' class='col-md-12 secret' data-color='" + val.secret + "'>" +  "<img class='img-circle img-responsive' + src='" + val.image + "'>" + "<div class='didi'>" + val.name + "</div>" + "<div class='time'>" + fixDate(val.timestamp)  + "</div>" + "</div>" );
     $('.container').on('click', '#' + key, function (){
-          $("#bla").css({"background": val.secret, "color": "white"}).text(val.name);
+          $("#bla").css({"background": val.secret, "color": "white"}).text(val.secret);
     });
     items.push()
   });
